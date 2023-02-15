@@ -6,7 +6,7 @@ import './Formulario.css';
 
 
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -25,6 +25,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
+        props.aoAlunoCadastrado({
+            nome,
+            portfolio,
+            imagem,
+            especialidade
+        })
         console.log('Salvando...', nome, portfolio, imagem, especialidade)
     }
     return (
