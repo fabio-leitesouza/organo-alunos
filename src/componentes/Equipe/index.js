@@ -10,9 +10,7 @@ const Equipe = (props) => {
     return (
         <section className='equipe' style={css}>
             <h3 style={cssBorder}>{props.nome}</h3>
-            <Aluno />
-            <Aluno />
-            <Aluno />
+            {props.alunos.map(aluno => <Aluno />)}
         </section>
     )
 }

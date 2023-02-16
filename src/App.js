@@ -54,7 +54,13 @@ function App() {
     <div className="App">
       <Banner />
       <Formulario nomeEquipes={equipes.map(equipe => equipe.nome)} aoAlunoCadastrado={aluno => aoNovoAlunoAdicionado(aluno)} />
-      {equipes.map(equipe => <Equipe key={equipe.nome} nome={equipe.nome} corPrimaria={equipe.corPrimaria} corSecundaria={equipe.corSecundaria} />)}
+      {equipes.map(equipe => <Equipe
+        key={equipe.nome}
+        nome={equipe.nome}
+        corPrimaria={equipe.corPrimaria}
+        corSecundaria={equipe.corSecundaria}
+        alunos={alunos}
+      />)}
     </div>
   );
 }
