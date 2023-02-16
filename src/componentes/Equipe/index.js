@@ -1,3 +1,4 @@
+import Aluno from '../Aluno';
 import './Equipe.css';
 
 const Equipe = (props) => {
@@ -9,7 +10,9 @@ const Equipe = (props) => {
     return (
         <section className='equipe' style={css}>
             <h3 style={cssBorder}>{props.nome}</h3>
-
+            <Aluno />
+            <Aluno />
+            <Aluno />
         </section>
     )
 }
