@@ -8,15 +8,17 @@ import './Formulario.css';
 
 const Formulario = (props) => {
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        ' Inovação e Gestão'
-    ]
+    // const times = [
+    //     'Programação',
+    //     'Front-End',
+    //     'Data Science',
+    //     'Devops',
+    //     'UX e Design',
+    //     'Mobile',
+    //     ' Inovação e Gestão'
+    // ]
+
+
 
     const [nome, setNome] = useState('')
     const [portfolio, setPortfolio] = useState('')
@@ -59,7 +61,7 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     label="Especialidade"
-                    itens={times}
+                    itens={props.nomeEquipes}                    
                     valor={especialidade}
                     aoAlterado={(valor) => setEspecialidade(valor)}
                 />
