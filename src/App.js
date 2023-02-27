@@ -53,7 +53,9 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario nomeEquipes={equipes.map(equipe => equipe.nome)} aoAlunoCadastrado={aluno => aoNovoAlunoAdicionado(aluno)} />
+      <Formulario
+        nomeEquipes={equipes.map(equipe => equipe.nome)}
+        aoAlunoCadastrado={aluno => aoNovoAlunoAdicionado(aluno)} />
       {equipes.map(equipe => <Equipe
         key={equipe.nome}
         nome={equipe.nome}
