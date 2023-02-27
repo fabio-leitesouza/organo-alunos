@@ -10,3 +10,10 @@
     display: inline-block;
     padding-bottom: 8px;
 }
+
+.equipe .alunos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32x;
+    flex-wrap: wrap;
+}

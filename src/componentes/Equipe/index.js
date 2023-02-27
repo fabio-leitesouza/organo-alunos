@@ -6,12 +6,19 @@ const Equipe = (props) => {
     const css = {backgroundColor: props.corSecundaria}
     const cssBorder = {borderColor: props.corPrimaria}
 
-
     return (
-        <section className='equipe' style={css}>
+        (props.alunos.length > 0) ? <section className='equipe' style={css}>
             <h3 style={cssBorder}>{props.nome}</h3>
-            {props.alunos.map(aluno => <Aluno />)}
-        </section>
+            <div className='alunos'>
+                {props.alunos.map(aluno => <Aluno 
+                    nome={aluno.nome}
+                    especialidade={aluno.especialidade}
+                    imagem={aluno.imagem}
+                    portifolio={aluno.portifolio}                
+                />)}
+            </div>            
+        </section>  
+        : ''      
     )
 }
 

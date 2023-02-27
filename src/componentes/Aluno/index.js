@@ -1,14 +1,14 @@
 import './Aluno.css'
 
-const Aluno = () => {
+const Aluno = ({ nome, imagem, especialidade }) => {
     return (
         <div className='aluno'>
             <div className='cabecalho'>
-                <img src='https://github.com/PaolaAp9.png' alt='Fabio Souza'/>
+                <img src={imagem} alt='Fabio Souza' />
             </div>
             <div className='rodape'>
-                <h4>Souza</h4>
-                <h5>Prof</h5>
+                <h4>{nome}</h4>
+                <h5>{especialidade}</h5>
             </div>
         </div>
     )

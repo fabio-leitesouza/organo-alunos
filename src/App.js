@@ -61,7 +61,7 @@ function App() {
         nome={equipe.nome}
         corPrimaria={equipe.corPrimaria}
         corSecundaria={equipe.corSecundaria}
-        alunos={alunos}
+        alunos={alunos.filter(aluno => aluno.especialidade === equipe.nome )}
       />)}
     </div>
   );
