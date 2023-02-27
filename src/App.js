@@ -5,41 +5,41 @@ import Formulario from './componentes/Formulario';
 
 function App() {
 
-  const equipes = [
+    const equipes = [
     {
       nome: 'Programação',
-      corPrimaria: '#24978d',
-      corSecundaria: '#36bf53'
+      corPrimaria: '#7DF5DA',
+      corSecundaria: '#E491D2'
     },
     {
       nome: 'Front-End',
-      corPrimaria: '#e491d2',
-      corSecundaria: '#e897d7'
+      corPrimaria: '#FABD93',
+      corSecundaria: '#939AFA'
     },
     {
       nome: 'Data Science',
-      corPrimaria: '#24978d',
-      corSecundaria: '#36bf53'
+      corPrimaria: '#E491D2',
+      corSecundaria: '#F0E68D'
     },
     {
       nome: 'Devops',
-      corPrimaria: '#55484e',
-      corSecundaria: '#545acs'
+      corPrimaria: '#939AFA',
+      corSecundaria: '#FABD93'
     },
     {
       nome: 'UX e Design',
-      corPrimaria: '#24978d',
-      corSecundaria: '#36bf53'
+      corPrimaria: '#7DF5DA',
+      corSecundaria: '#E491D2'
     },
     {
       nome: 'Mobile',
-      corPrimaria: '#55484e',
-      corSecundaria: '#545acs'
+      corPrimaria: '#F0E68D',
+      corSecundaria: '#939AFA'
     },
     {
       nome: 'Inovação e Gestão',
-      corPrimaria: '#24978d',
-      corSecundaria: '#36bf53'
+      corPrimaria: '#E491D2',
+      corSecundaria: '#7DF5DA'
     }
   ]
 
