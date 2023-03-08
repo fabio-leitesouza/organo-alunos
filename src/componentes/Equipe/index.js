@@ -11,10 +11,13 @@ const Equipe = (props) => {
             <h3 style={cssBorder}>{props.nome}</h3>
             <div className='alunos'>
                 {props.alunos.map(aluno => <Aluno 
+                    key={aluno.nome} 
+                    corDeFundo={props.corPrimaria}
                     nome={aluno.nome}
                     especialidade={aluno.especialidade}
                     imagem={aluno.imagem}
-                    portifolio={aluno.portifolio}                
+                    portifolio={aluno.portifolio}   
+                                
                 />)}
             </div>            
         </section>  
