@@ -21,7 +21,6 @@ const Formulario = (props) => {
             imagem,
             especialidade
         })
-        console.log('Salvando...', nome, portfolio, imagem, especialidade)
     }
     return (
         <section className='formulario'>
