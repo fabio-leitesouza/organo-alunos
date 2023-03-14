@@ -1,25 +1,33 @@
 import Aluno from '../Aluno';
 import './Equipe.css';
 
-const Equipe = (props) => {
+const Equipe = ({alunos, nome, corPrimaria, corSecundaria, aoDeletar }) => {
 
-    const css = { backgroundColor: props.corSecundaria }
-    const cssBorder = { borderColor: props.corPrimaria }
+    const css = { backgroundColor: corSecundaria }
+    const cssBorder = { borderColor: corPrimaria }
 
     return (
-        (props.alunos.length > 0) ? <section className='equipe' style={css}>
-            <h3 style={cssBorder}>{props.nome}</h3>
+        (alunos.length > 0) ? <section className='equipe' style={css}>
+            <h3 style={cssBorder}>{nome}</h3>
             <div className='alunos'>
-                {props.alunos.map(aluno => {
-                    console.log('aluno')
+                {alunos.map(aluno => {
+                    // console.log(<Aluno
+                    //     key={aluno.nome}
+                    //     corDeFundo={corPrimaria}
+                    //     nome={aluno.nome}
+                    //     especialidade={aluno.especialidade}
+                    //     imagem={aluno.imagem}
+                    //     portifolio={aluno.portifolio}   
+                    //     aoDeletar={aoDeletar}
+                    // />)
                     return <Aluno
                         key={aluno.nome}
-                        corDeFundo={props.corPrimaria}
+                        corDeFundo={corPrimaria}
                         nome={aluno.nome}
                         especialidade={aluno.especialidade}
                         imagem={aluno.imagem}
                         portifolio={aluno.portifolio}   
-                        aoDeletar={props.aoDeletar}
+                        aoDeletar={aoDeletar}
                     />
                 })}
             </div>

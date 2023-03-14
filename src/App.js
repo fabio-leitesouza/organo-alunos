@@ -45,6 +45,10 @@ function App() {
 
   const [alunos, setAlunos] = useState([])
 
+  const deletarColaborador = () => {
+    console.log('Deletando aluno')
+  } 
+
   const aoNovoAlunoAdicionado = (aluno) => {
     // debugger
     setAlunos([...alunos, aluno])
@@ -62,6 +66,7 @@ function App() {
         corPrimaria={equipe.corPrimaria}
         corSecundaria={equipe.corSecundaria}
         alunos={alunos.filter(aluno => aluno.especialidade === equipe.nome )}
+        aoDeletar={deletarColaborador}
       />)}
     </div>
   );
