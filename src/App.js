@@ -46,7 +46,7 @@ function App() {
   const [alunos, setAlunos] = useState([])
 
   const aoNovoAlunoAdicionado = (aluno) => {
-    debugger
+    // debugger
     setAlunos([...alunos, aluno])
   }
 
